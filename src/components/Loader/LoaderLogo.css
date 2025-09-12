@@ -1,4 +1,29 @@
+/* LoaderLogo.css - simple, fixed dimensions and text styling */
+
 .raw_logo {
-  height: 305;
-  width: 440;
+  /* use explicit px sizes — avoids "height: 305" with no units issue */
+  height: 305px;
+  width: 440px;
+  display: block;
+  max-width: 80vw;
+  max-height: 60vh;
+}
+
+/* adjust SVG text styling fallback */
+.logo_text {
+  /* font-size controlled inside the SVG <text> too; this is a fallback */
+  font-family: "Segoe UI", Roboto, Arial, sans-serif;
+  font-weight: 700;
+  fill: none; /* we use stroke to match the drawn style */
+}
+
+/* small-screen responsive tweaks */
+@media (max-width: 600px) {
+  .raw_logo {
+    width: 320px;
+    height: 220px;
+  }
+  .logo_text {
+    font-size: 18px;
+  }
 }

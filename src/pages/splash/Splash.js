@@ -4,10 +4,22 @@ import { Redirect } from "react-router-dom";
 import LoaderLogo from "../../components/Loader/LoaderLogo.js";
 
 function AnimatedSplash(props) {
+  // props.name can be passed from the route or parent. Fallback to "Hill Patel".
   return (
     <div className="logo_wrapper">
-      <div className="screen" style={{ backgroundColor: props.theme.splashBg }}>
-        <LoaderLogo id="logo" theme={props.theme} />
+      <div
+        className="screen"
+        style={{
+          backgroundColor:
+            (props.theme && props.theme.splashBg) || "rgba(6,57,111,0.98)",
+        }}
+      >
+        {/* pass desired name here */}
+        <LoaderLogo
+          id="logo"
+          theme={props.theme}
+          name={props.name || "Hill Patel"}
+        />
       </div>
     </div>
   );
@@ -19,14 +31,21 @@ class Splash extends Component {
     this.state = {
       redirect: false,
     };
+
+    this.id = null;
   }
 
   componentDidMount() {
+    // keep same 5.5s timeout as your existing code
     this.id = setTimeout(() => this.setState({ redirect: true }), 5500);
   }
 
-  componentWillMount() {
-    clearTimeout(this.id);
+  componentWillUnmount() {
+    // proper cleanup (componentWillMount is deprecated & wrong place)
+    if (this.id) {
+      clearTimeout(this.id);
+      this.id = null;
+    }
   }
 
   render() {

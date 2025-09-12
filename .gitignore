@@ -9,8 +9,9 @@
 # testing
 /coverage
 
-
-
+node_modules/
+build/
+.env
 # misc
 .DS_Store
 .env 
@@ -23,3 +24,10 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 !/package-lock.json
+
+src/shared/opensource
+token.txt
+.env
+.github
+.all-contributorsrc
+.vscode
