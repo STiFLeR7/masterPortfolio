@@ -25,7 +25,7 @@ const greeting = {
   subTitle:
     "A passionate AI/ML innovator dedicated to building scalable, efficient, and socially impactful systems. Thrives on taking ideas from research to real-world deployment, crafting sustainable edge-ready solutions that merge technical depth with meaningful outcomes.",
   resumeLink:
-    "https://drive.google.com/file/d/1bXRknv_h-XI_3CQ3SGPteGODtvEb7YvI/view?usp=sharing",
+    "https://drive.google.com/file/d/1LxtwaZF2mFO1WWKDRjYbYCXoUXj72uCc/view?usp=sharing",
   portfolio_repository: "https://github.com/STiFLeR7/masterPortfolio",
   githubProfile: "https://github.com/STiFLeR7",
 };
