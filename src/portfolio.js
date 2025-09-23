@@ -418,14 +418,14 @@ const experience = {
           color: "#1F8AE0",
         },
         {
-          title: "SIH 2024 — Stage I Cleared",
+          title: "SIH 2025 — National Nomination (2 Ideas)",
           company: "Smart India Hackathon",
           company_url: "https://www.sih.gov.in/",
           logo_path: "sih.jpg",
-          duration: "2024",
+          duration: "2025",
           location: "Jaipur, Rajasthan",
           description:
-            "Advanced through Stage I of the Smart India Hackathon 2024 with a prototype addressing a real-world civic/industrial problem — built a fast proof-of-concept, produced evaluation results, and prepared an MVP-ready demo for the next stage.",
+            "Nominated to the National level of the Smart India Hackathon 2025 with two innovative project ideas. Both were shortlisted through internal rounds, showcasing solutions that bridge AI research with deployable, real-world civic and industrial impact.",
           color: "#E94B35",
         },
       ],
