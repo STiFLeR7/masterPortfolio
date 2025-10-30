@@ -335,6 +335,15 @@ const certifications = {
       alt_name: "Udemy",
       color_code: "#A435F0",
     },
+    {
+      title: "Model Context Protocol (MCP) Mastery",
+      subtitle: "Fractal AI",
+      logo_path: "fractal.jpg",
+      certificate_link:
+        "https://www.coursera.org/account/accomplishments/verify/HPPHQGYNQGWQ",
+      alt_name: "Fractal AI",
+      color_code: "#ff0037ff",
+    },
   ],
 };
 
