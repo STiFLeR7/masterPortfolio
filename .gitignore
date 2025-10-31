@@ -28,6 +28,6 @@ yarn-error.log*
 src/shared/opensource
 token.txt
 .env
-.github
+
 .all-contributorsrc
 .vscode
